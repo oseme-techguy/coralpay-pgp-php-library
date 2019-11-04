@@ -1,0 +1,35 @@
+{
+    "name": "coralpay/pgp_php",
+    "description": "This is a library from Coralpay to handle PGP encryption via GNU Privacy Guard (GnuPG). It requires the GnuPG executable to be on the system.",
+    "type": "library",
+    "keywords": [
+        "gpg",
+        "gnupg",
+        "encryption",
+        "pgp",
+        "coralpay"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oseme Odigie",
+            "email": "oseme.odigie@coralpay.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.8",
+        "pear/crypt_gpg": "*"
+    },
+    "suggest": {
+        "ext-posix": "May require the posix PHP extension"
+    },
+    "include-path": [
+        "./"
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "archive": {
+        "exclude": ["tools", "package.php"]
+    }
+}
