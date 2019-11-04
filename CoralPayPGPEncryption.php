@@ -16,6 +16,14 @@ class CoralPayPGPEncryption extends Crypt_GPG
     }
 
     /**
+     * Gets the GPG version being used
+     * @return $output - the version of the GPG
+     */
+    public function getVersion() {
+        return $this->engine->getVersion();;
+    }
+
+    /**
      * Used to encrypt the request message to Cgate.
      * 
      * @return $output - of the encryption
